@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp1.Pages.TestPage">
+
+    <ContentPage x:Name="Tab1" Title="Tab 2">
+        <ScrollView>
+            <VerticalStackLayout Spacing="25" Padding="30, 0" VerticalOptions="Center">
+                <Label>This is a test page, here you should be able to pick date</Label>
+                <CheckBox x:Name="DateCheckbox" CheckedChanged="OnDateCheckboxChange" />
+                <DatePicker x:Name="DatePicker" IsVisible="False" Format="dd-MM-yyyy" />
+                <Button x:Name="DatePageLink" Text="Go to date page" Clicked="OnDatePageLinkClick" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage>
+    
+    
+    <ContentPage x:Name="Tab2" Title="Tab 2">
+        <ScrollView>
+            <VerticalStackLayout Spacing="25" Padding="30, 0" VerticalOptions="Center">
+                <Label>This is tab 2 of tabbed page</Label>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage>
+</TabbedPage>
